@@ -7,7 +7,7 @@
       </template>
 
       <!-- LOGO -->
-      <div class="text-h3 font-weight-medium px-10">{{ logoText }}</div>
+      <div class="custom-font text-h3 font-weight-medium px-10">{{ logoText }}</div>
 
       <v-spacer />
 
@@ -147,3 +147,9 @@ const routeToView = (routePath: string) => {
   router.push(routePath)
 }
 </script>
+
+<style lang="scss" scoped>
+// Import your SCSS file that includes the Source Code Pro font
+@import "../styles/settings.scss";
+
+</style>
