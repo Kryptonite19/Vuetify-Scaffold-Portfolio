@@ -1,5 +1,9 @@
 <template>
-    <div class="text-h1"> BLOG UNDER CONSTRUCTİON XD</div>
+  <div class="text-h1">{{ t('$vuetify.navbar.blog') }}</div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useLocale } from 'vuetify'
+
+const { t } = useLocale()
+</script>
