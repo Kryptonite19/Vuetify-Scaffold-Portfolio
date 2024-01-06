@@ -7,22 +7,21 @@
           <v-form fast-fail @submit.prevent class="mt-5">
             <v-text-field
               variant="outlined"
-              label="Your Email"
+              :label="t('$vuetify.contactpage.yourmail')"
               placeholder="jondoe@gmail.com"
             ></v-text-field>
 
-            <v-text-field variant="outlined" label="Subject"></v-text-field>
+            <v-text-field variant="outlined" :label="t('$vuetify.contactpage.subject')"></v-text-field>
 
-            <v-textarea variant="outlined" label="Your Message"></v-textarea>
+            <v-textarea variant="outlined" :label="t('$vuetify.contactpage.message')"></v-textarea>
 
-            <v-btn type="submit" dense color="#673AB7" class="mt-2">Submit</v-btn>
+            <v-btn type="submit" block dense color="primary" class="mt-2">{{ t('$vuetify.contactpage.submit') }}</v-btn>
           </v-form>
         </v-col>
         <v-col>
-          <div class="text-h3">Lets connect</div>
+          <div class="text-h3">{{ t('$vuetify.contactpage.connect') }}</div>
           <p class="text-left mt-5">
-            I&apos;m currently looking for new opportunities, my inbox is always open. Whether you
-            have a question or just want to say hi, I&apos;ll try my best to get back to you!
+            {{ t('$vuetify.contactpage.connectbody') }}
           </p>
           <div class="d-flex align-center justify-center">
             <v-img max-width="100" :aspect-ratio="1" src="../assets/github-icon-dark.svg" />
