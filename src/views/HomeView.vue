@@ -10,7 +10,7 @@
         </h1>
       </div>
       <div :class="{ 'text-h3 font-weight-medium text-justify mt-3': !mobile }">
-        Welcome to my portfolio website where i tell you about myself
+        {{ t('$vuetify.herotext') }}
       </div>
     </v-responsive>
   </v-container>
@@ -76,7 +76,7 @@ h1 {
   font-size: 15pt;
   font-weight: bold;
   span.typed-text {
-    color: #673ab7;
+    color: #6200EE;
   }
 }
 
